@@ -24,13 +24,14 @@ var t = function (p) {
 
     if (h <= 17 && h > 7) {
       backColor = 255;
-    } else if (h <= 20 && h > 17) {
+    } else if ((h <= 20 && h > 17) || (h <= 7 && h > 4)) {
       backColor = 100;
-    } else if ((h <= 24 && h > 20) || (h <= 7 && h >= 0)) {
+    } else if ((h <= 24 && h > 20) || (h <= 4 && h > 0)) {
       backColor = 0;
       eye.style.color = "white";
       grid.style.color = "white";
     }
+
 
     p.background(backColor, backColor, backColor);
 
