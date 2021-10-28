@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* .eye {
+  position: fixed;
+}
+.grid {
+  position: fixed;
+} */
+.active {
+  display: none;
+}
+.switch {
+  position: fixed;
+  z-index: 3;
+  margin: 1vw;
+  font-family: sans-serif;
+  font-size: 2vw;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.switch:hover {
+  transform: scale(1.1);
+}
+.switch:active {
+  transform: scale(0.8);
+}
+.eye {
+  display: none;
+}
+.grid {
+}
+
+#eyeC {
+  position: fixed;
+  z-index: -1;
+}
+#gridC {
+  position: fixed;
+  z-index: -1;
+}
